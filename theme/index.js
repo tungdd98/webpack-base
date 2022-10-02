@@ -1,7 +1,7 @@
-const { colorsDesignSystem } = require('./utils/color.utils')
-const { FONT_SIZE: fontSizeDesignSystem } = require('./constants/typography.constants')
+const { colors } = require('./color')
+const { fontSizes } = require('./typography')
 
 module.exports = {
-  colorsDesignSystem,
-  fontSizeDesignSystem,
+  colors,
+  fontSizes,
 }

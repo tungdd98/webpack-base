@@ -7,7 +7,11 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body class="bg-background-secondary">
-    <h1 class="font-bold text-neutral-800 text-small-text-02">Hello world!</h1>
+    <%= require('html-loader!../components/header.html').default %>
+
+    <h1 class="font-bold text-primary text-h1">Hello world 123456!</h1>
     <img src="assets/icons-cat-footprint.png" alt="" />
+
+    <%= require('html-loader!../components/footer.html').default %>
   </body>
 </html>

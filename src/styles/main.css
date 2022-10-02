@@ -1,6 +1,12 @@
 @font-face {
-  font-family: 'Inter';
-  src: url('../fonts/Inter.ttf');
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway.ttf');
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Italic.ttf');
+  font-style: italic;
 }
 
 @tailwind base;
@@ -9,6 +15,6 @@
 
 @layer base {
   html {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Raleway', system-ui, sans-serif;
   }
 }

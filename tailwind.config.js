@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 
-const { colorsDesignSystem, fontSizeDesignSystem } = require('./theme')
+const { colors, fontSize } = require('./theme')
 
 module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {},
-    colors: colorsDesignSystem,
-    fontSize: fontSizeDesignSystem,
+    colors,
+    fontSize,
   },
   plugins: [],
 }

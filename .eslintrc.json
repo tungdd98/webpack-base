@@ -1,6 +1,6 @@
 {
   "rules": {
-    "prefer-template": "off",
+    "prefer-template": 0,
     "no-var": 1,
     "no-unused-vars": 1,
     "camelcase": 1,
@@ -11,12 +11,12 @@
     "import/prefer-default-export": 0,
     "arrow-body-style": 1,
     "import/no-extraneous-dependencies": [
-      "off",
+      0,
       {
         "devDependencies": false
       }
     ],
-    "no-undef": "off"
+    "no-undef": 0
   },
   "ignorePatterns": [
     "dist",
