@@ -1,10 +1,10 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 
-const { paths, entries, htmlWebpackPlugins } = require('./config')
+const { paths, entry, htmlWebpackPlugins } = require('./config')
 
 module.exports = {
-  entry: entries,
+  entry,
   output: {
     path: paths.build,
     filename: 'js/[name].[contenthash].bundle.js',
@@ -31,6 +31,16 @@ module.exports = {
       { test: /\.js$/, use: ['babel-loader'] },
       { test: /\.(?:ico|gif|png|jpg|jpeg)$/i, type: 'asset/resource' },
       { test: /\.(woff(2)?|eot|ttf|otf|svg|)$/, type: 'asset/inline' },
+      {
+        test: /\.(html)$/,
+        include: paths.pages,
+        use: {
+          loader: 'html-loader',
+          options: {
+            interpolate: true,
+          },
+        },
+      },
     ],
   },
   resolve: {

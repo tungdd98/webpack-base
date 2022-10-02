@@ -5,9 +5,10 @@ const paths = {
   src: path.resolve(__dirname, '../src'),
   build: path.resolve(__dirname, '../dist'),
   public: path.resolve(__dirname, '../public'),
+  pages: path.join(__dirname, 'src/pages'),
 }
 
-const entries = ['main', 'about'].reduce(
+const entry = ['main', 'about'].reduce(
   (act, entry) => ({ ...act, [entry]: `${paths.src}/js/${entry}.js` }),
   {}
 )
@@ -30,7 +31,7 @@ const htmlWebpackPlugins = infoPages.map(
 
 module.exports = {
   paths,
-  entries,
+  entry,
   infoPages,
   htmlWebpackPlugins,
 }
