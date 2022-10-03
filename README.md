@@ -25,5 +25,3 @@ yarn build
 
 Test squash commit 1
 Test squash commit 2
-Test squash commit 3
-Test squash commit 4
