@@ -1,4 +1,4 @@
-# Webpack 5 Tailwind CSS Starter
+# Webpack 5 + Tailwind CSS + PugJs Starter
 
 ## Usage
 
