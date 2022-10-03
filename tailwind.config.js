@@ -3,7 +3,7 @@
 const { colors, fontSize } = require('./theme')
 
 module.exports = {
-  content: ['./src/**/*.{html,js}'],
+  content: ['./src/**/*.{html,js,pug}'],
   theme: {
     extend: {},
     colors,
