@@ -22,6 +22,3 @@ To generate the production build, run the following command:
 ```bash
 yarn build
 ```
-
-Test squash commit 1
-Test squash commit 2
