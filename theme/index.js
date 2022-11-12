@@ -1,7 +1,7 @@
 const { colors } = require('./color')
-const { fontSize } = require('./typography')
+const { fontSizes } = require('./typography')
 
 module.exports = {
   colors,
-  fontSize,
+  fontSizes,
 }
